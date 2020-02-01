@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>UI Design - Medicine Reminder App</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            
+            <div id="mra_app" class="row">
+
+                <!-- Start Section Header Bar -->
+                <section id="mra_header_bar" class="col-12">
+                    <div class="row">
+                        <div class="col-8 mra_header_title">
+                            My reminders
+                        </div>
+                        <div class="col-4 mra_header_icon">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Section Header Bar -->
+                
+                <!-- Start Section Months Bar -->
+                <section id="mra_months_bar" class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li>February</li>
+                                <li>March</li>
+                                <li class="active">April</li>
+                                <li>May</li>
+                                <li>June</li>
+                                <li>July</li>
+                                <li>August</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Section Months Bar -->
+
+                <!-- Start Section Months Bar -->
+                <section id="mra_date_bar" class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span class="medicines">
+                                            <span class="color-orange"></span>
+                                        </span>
+                                        <span class="date">25</span>
+                                        <span class="day">Fri</span>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="medicines">
+                                            <span class="color-violet"></span>
+                                            <span class="color-orange"></span>
+                                        </span>
+                                        <span class="date">26</span>
+                                        <span class="day">Sat</span>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="date">27</span>
+                                        <span class="day">Sun</span>    
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <div>
+                                        <span class="medicines">
+                                            <span class="color-violet"></span>
+                                            <span class="color-orange"></span>
+                                        </span>
+                                        <span class="date">28</span>
+                                        <span class="day">Mon</span>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="medicines">
+                                            <span class="color-orange"></span>
+                                        </span>
+                                        <span class="date">29</span>
+                                        <span class="day">Tue</span>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="medicines">
+                                            <span class="color-green"></span>
+                                        </span>
+                                        <span class="date">30</span>
+                                        <span class="day">Wed</span>    
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Section Months Bar -->
+
+                <!-- Start Section Body -->
+                
+                <section id="mra_body" class="col-12">
+                    <div class="row mra_body_header">
+                        <div class="col-3">
+                            Time
+                        </div>
+                        <div class="col-9">
+                            Medicine
+                            <select name="medicine">
+                                <option value="0">All</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mra_body_data color-violet">
+                        <div class="col-3">
+                            <ul>
+                                <li>8:00</li>
+                                <li>8:30</li>
+                                <li>9:00</li>
+                            </ul>
+                        </div>
+                        <div class="col-9">
+                            <div class="medicine_info">
+                                <span class="m_icon">
+                                    <img src="imgs/capsule.png" alt="">
+                                </span>
+                                <span class="m_info">
+                                    <span class="m_name">Naproxen</span>
+                                    <span class="m_dosage">3 piils (10mg)</span>
+                                    <span class="m_time">
+                                        <i class="fa fa-clock-o"></i>&nbsp; 08:00 - 09:00
+                                    </span>
+                                </span>
+                                <span class="m_status true">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mra_body_data color-orange">
+                        <div class="col-3">
+                            <ul>
+                                <li>9:30</li>
+                                <li>10:00</li>
+                                <li>10:30</li>
+                                <li>11:00</li>
+                            </ul>
+                        </div>
+                        <div class="col-9">
+                            <div class="medicine_info">
+                                <span class="m_icon">
+                                    <img src="imgs/injection.png" alt="">
+                                </span>
+                                <span class="m_info">
+                                    <span class="m_name">Insulin</span>
+                                    <span class="m_dosage">1 injection (8ml)</span>
+                                    <span class="m_time">
+                                        <i class="fa fa-clock-o"></i>&nbsp; 09:00 - 11:00
+                                    </span>
+                                </span>
+                                <span class="m_status false">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End Section Body -->
+
+                <!-- Start Section Footer -->
+
+                <section id="mra_footer" class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li class="active">
+                                    <i class="fa fa-bell-o"></i> 
+                                    <span>Reminders</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-cog"></i>
+                                    <span>Settings</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user-md"></i>
+                                    <span>Treatments</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user-o"></i>
+                                    <span>My Account</span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-default btn-lg btnAdd" type="button">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End Section Footer -->
+                 
+            </div>
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+        
+        <script src="js/custom.js" type="text/javascript"></script>
+    </body>
+</html>

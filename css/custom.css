@@ -1,0 +1,469 @@
+body
+{
+    background-color: #f5f6fa;
+    font-family: Roboto;
+}
+
+#mra_app
+{
+    padding-bottom: 90px;
+}
+
+/** Start Section Header Bar Style **/
+
+#mra_header_bar
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.9);
+    padding: 30px 25px;
+    background-color: #fff;
+}
+
+#mra_header_bar .mra_header_icon
+{
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.4);
+}
+
+/** End Section Header Bar Style **/
+
+/** Start Section Months Bar Style **/
+
+#mra_months_bar
+{
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+#mra_months_bar .row > div
+{
+    padding: 0;
+}
+
+#mra_months_bar ul
+{
+    padding: 0;
+}
+
+#mra_months_bar ul li
+{
+    list-style: none;
+    font-size: 9px;
+    padding: 6px 0;
+    font-weight: 600;
+    float: left;
+    width: calc(100%/7);
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+
+#mra_months_bar:before
+{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    top: 0;
+    margin-left: -30px;
+    z-index: 1;
+    filter: blur(4px);
+    box-shadow: 10px 0 8px rgba(255,2555,255,1);
+    opacity: 0.95;
+}
+
+#mra_months_bar:after
+{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    top: 0;
+    right: 0;
+    margin-right: -15px;
+    z-index: 1;
+    filter: blur(4px);
+    box-shadow: -10px 0 8px rgba(255,2555,255,1);
+    opacity: 0.95;
+}
+
+#mra_months_bar ul li.active
+{
+    background: rgba(9,16,255,0.08);
+    border-radius: 6px;
+    color: rgba(9,16,255, 1);
+}
+
+/** End Section Months Bar Style **/
+
+/** Start Section Date Bar Style **/
+
+#mra_date_bar
+{
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-top: 15px; 
+    border-radius: 0 0 30px 30px;
+}
+
+#mra_date_bar ul
+{
+    padding: 0;
+}
+
+#mra_date_bar ul li
+{
+    list-style: none;
+    float: left;
+    width: calc(100%/6);
+    text-align: center;
+}
+
+#mra_date_bar ul li div
+{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin: 14px 0px;
+    padding: 15px 0;
+    background-color: #f5f6fa;
+    border-radius: 8px;
+}
+
+#mra_date_bar ul li span
+{
+    display: block;
+}
+
+#mra_date_bar ul li span.date
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#mra_date_bar ul li span.day
+{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+#mra_date_bar ul li.active div
+{
+    background: rgba(9,16,255,1);
+    color: rgba(255,255,255,1);
+}
+
+#mra_date_bar ul li.active span.day
+{
+    color: rgba(255,255,255,0.8);
+}
+
+#mra_date_bar ul li span.medicines
+{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    transform: translateY(-60%);
+}
+
+#mra_date_bar ul li span.medicines span
+{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+
+#mra_date_bar ul li.active span.medicines span
+{
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+#mra_date_bar ul li span.medicines span.color-violet
+{
+    background-color: #a600f8;
+}
+
+#mra_date_bar ul li span.medicines span.color-orange
+{
+    background-color: #fd780b;
+}
+
+#mra_date_bar ul li span.medicines span.color-green
+{
+    background-color: #0ee36f;
+}
+
+/** End Section Date Bar Style **/
+
+/** Start Section Body Style **/
+
+#mra_body
+{
+    margin-top: 20px;
+}
+
+#mra_body .mra_body_header
+{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+#mra_body .mra_body_header select
+{
+    float: right;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(9,16,255,1);
+    background-color: rgba(9,16,255,0.08);
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: -5px;
+}
+
+#mra_body .mra_body_data
+{
+    padding: 0 10px;
+}
+
+#mra_body .row:nth-child(2)
+{
+    margin-top: 15px;
+}
+
+#mra_body .mra_body_data ul
+{
+    padding: 0;
+}
+
+#mra_body .mra_body_data ul li
+{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 0;
+    color: rgba(0,0,0,0.4);
+}
+
+.mra_body_data .medicine_info
+{
+    position: relative;
+    background-color: #fff;
+    height: 90%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.mra_body_data .medicine_info > span
+{
+    float: left;
+}
+
+.mra_body_data .medicine_info .m_icon
+{
+    padding: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.mra_body_data .medicine_info .m_icon img
+{
+    width: 25px;
+}
+
+.mra_body_data .medicine_info .m_info
+{
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.mra_body_data .medicine_info .m_info > span
+{
+    display: block;
+}
+
+.mra_body_data .medicine_info .m_info span.m_name
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+}
+
+.mra_body_data .medicine_info .m_info span.m_dosage
+{
+    font-size: 11.5px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.4);
+    margin-top: 1px;
+}
+
+.mra_body_data .medicine_info .m_info span.m_time
+{
+    position: absolute;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.4);   
+    bottom: 0;
+    margin-bottom: 25px;
+}
+
+.mra_body_data .medicine_info .m_status
+{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: rgba(0,0,0,0.25);
+    border: 1.5px dashed rgba(0,0,0,0.15);
+    border-radius: inherit;
+}
+
+.mra_body_data .medicine_info .m_status.true
+{
+    background-color: rgba(14,227,111,0.15);
+    color: rgba(14,227,111,1);
+    border: 1px dashed rgba(0,0,0,0);
+}
+
+
+#mra_body .col-3
+{
+    flex: 0 0 21%;
+    max-width: 21%;
+}
+
+#mra_body .col-9
+{
+    flex: 0 0 79%;
+    max-width: 79%;
+    padding-left: 0;
+}
+
+.mra_body_data.color-violet ul li
+{
+    border-right: 1px solid rgba(166,0,248,0.25);
+    box-shadow: 15px 0 10px -10px rgba(166,0,248,0.15);
+}
+
+.mra_body_data.color-orange ul li
+{
+    border-right: 1px solid rgba(253,120,11,0.25);
+    box-shadow: 15px 0 10px -10px rgba(253,120,11,0.15);
+}
+
+.mra_body_data ul li:first-child
+{
+    border-radius: 0 25px 0 0;
+}
+
+.mra_body_data ul li:last-child
+{
+    border-radius: 0 0 25px 0;
+}
+
+.mra_body_data.color-violet .medicine_info .m_icon
+{
+    background-color: rgba(166,0,248,0.15);
+}
+
+.mra_body_data.color-orange .medicine_info .m_icon
+{
+    background-color: rgba(253,120,11,0.15);
+}
+
+/** End Section Body Style **/
+
+/** Start Section Footer Style **/
+
+#mra_footer
+{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    /** This box shadow property should be written in last **/
+    box-shadow: 0 -40px 20px -40px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#mra_footer ul li span
+{
+    margin-left: 3.5px; 
+}
+
+#mra_footer ul li:not(.active) span
+{
+    display: none;
+}
+
+#mra_footer ul
+{
+    padding: 0;
+}
+
+#mra_footer ul li
+{
+    list-style: none;
+    float: left;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#mra_footer ul li i
+{
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+#mra_footer ul li.active
+{
+    width: calc(100%/2);
+    background: rgba(9,16,255,0.08);
+    border-radius: 100px;
+    color: rgba(9,16,255, 1);
+}
+
+#mra_footer ul li:not(.active)
+{
+    width: calc(100%/6);
+    color: rgba(0,0,0,0.9);
+}
+
+.btnAdd
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 80px;
+    margin-right: 10px;
+    background-color: rgba(9,16,255, 1);
+    color: #fff;
+    box-shadow: 10px 10px 15px -5px rgba(9,16,255, 0.3);
+}
+
+
+/** End Section Footer Style **/
